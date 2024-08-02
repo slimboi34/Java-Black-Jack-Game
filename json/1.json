@@ -1,0 +1,139 @@
+{
+    "apiversion": "1.5",
+    "request": "addcampaign",
+    "sapisession": "1vfus2q7oh1i7cbf4u0ih2ci6njdik5t6mslao4586edc90srpe4",
+    "type": "freerounds",
+    "campaignid": "LNW_FreeRound_Example",  // Corrected campaignid
+    "ogsoperatorid": 1898,
+    "description": "LightAndWonder FreeRound2 campaign",
+    "startdate": "2024-05-21T06:56:16Z",
+    "enddate": "2024-05-23T06:56:16Z",
+    "campaignvalue": 1,
+    "liabilitycap": 100000,
+    "moneytype": "real",
+    "rejectable": "true",
+    "status": "created",
+    "promotionvalidfor": 2,
+    "activationid": "",  // Can be empty
+    "remainingrounds": 3,
+    "promotionstatus": "inprogress",
+    "promotiontotalwin": 10.00,
+    "games": [
+      {
+        "ogsgameid": 70001,  // Corrected ogsgameid
+        "options": [
+          {
+            "betlevel": 0.2,
+            "totalrounds": 19,
+            "feature": "20+0"
+          }
+        ]
+      }
+    ]
+  }
+  
+mine   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GetBetLevels request example:
+{
+"apiversion":"1.4",
+"request":"getbetlevels", "sapisession":"29e96nbjurkambh2ge4eeel6dtje4g", "ogsoperatorid":5,
+"ogsgameids":"70433",
+"currency":"GBP"
+}
+
+
+
+
+
+AddCampaign POST URL example:
+https://sapi-stage.nyxmalta.com/promotions/
+AddCampaign request example:
+[].[].feature
+Enable a specific game feature that affects the total bet level of an individual game round. This must be Default if no feature is indicated. This value should be taken from the getbetlevel request to ensure the option is available
+Char(32)
+25+25
+{
+"apiversion": "1.4",
+"request": "addcampaign", "sapisession":"29e96nbjurkambh2ge4eeel6dtje4g",
+"type": "freerounds",
+"campaignid": "LNW_FreeRound_Example",
+"ogsoperatorid":5,
+"description": "LNW_FreeRound_Example",
+"messages" :{ "start": "You have free rounds. <a href=\"https://www.rules.com\" target=\"_blank\">Click here for rules</a>"},
+"startdate":"2019-06-28T12:09:00Z", "enddate":"2019-07-28T12:09:00Z",
+"campaignvalue":11,
+"campaigncurrency": "EUR",
+"liabilitycap":100000,
+"moneytype": "bonus",
+"rejectable": "true",
+"status": "created",
+"promotionvalidfor":7,
+"promotionvalidto":null,
+"games":[{
+"ogsgameid":70433,
+"options" :[
+    {"betlevel":0.5,"totalrounds":22,"feature":"25+0"}, {"betlevel":0.75,"totalrounds":14,"feature":"25+0"}]}, {"ogsgameid":70351,
+    "options" :[ {"betlevel":0.5,"totalrounds":22,"feature":"1+0"}, {"betlevel":1,"totalrounds":11,"feature":"1+0"}, {"betlevel":2,"totalrounds":5,"feature":"1+0"}]}
+    ]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+    get bet levels 
+
+
+    {
+        "apiversion": "1.4",
+        "request": "getbetlevels",
+        "sapisession": "1o3rmi0463sop1jcss3eitlsdp9ga5cssg4cgr6vg2eg0drice93",
+          "ogsoperatorid": 1898,
+        "ogsgameids": "70433",
+        "currency": "GBP"
+    }
+
+
+
+    
+        "RSP":{
+        "request": "getbetlevels",
+        "rc": 0,
+        "apiversion": "1.4",
+        "sapisession": "1o3rmi0463sop1jcss3eitlsdp9ga5cssg4cgr6vg2eg0drice93",
+        "ogsoperatorid": 1898,
+        "games":[
+        {"ogsgameid": 70433, "playerchoice": 4, "gamechoice": false, "options":[{"feature": "25+0",…}
+        ]
+        }
+        }
